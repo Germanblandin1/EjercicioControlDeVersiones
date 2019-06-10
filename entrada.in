@@ -1,0 +1,26 @@
+12
+Home 0
+Home/Trabajo 0
+Home/Estudio 0
+Home/Trabajo/Codigo.cpp 1
+Home/Trabajo/Codigo2.cpp 1
+Home/Trabajo/Codigo.cpp 1
+Home/Trabajo/Codigo2.cpp 1
+Home/Estudio/tarea.cpp 1
+Home/Estudio/leeme.txt 1
+Home/Estudio/leeme.txt 1
+Home/Estudio/tarea.cpp 1
+Home/virus.v 1
+12
+1 Home 6 6 2019 14 36 20
+0 Home/Estudio/tarea.cpp 6 6 2019 14 36 7
+1 Home/Trabajo 6 6 2019 14 36 3
+2 Home/Trabajo/Codigo.cpp 6 6 2019 14 36 3 6 6 2019 14 36 11
+3 Home/Trabajo/Codigo.cpp 6 6 2019 14 36 10
+2 Home/Trabajo/Codigo.cpp 6 6 2019 14 36 0 6 6 2019 14 36 11
+1 Home/Estudio 6 6 2019 14 36 10
+4 Home/Estudio 6 6 2019 14 36 20
+1 Home/Estudio 6 6 2019 14 36 8
+4 Home/Estudio 6 6 2019 14 36 20
+1 Home/Estudio 6 6 2019 14 36 10
+1 Home 6 6 2019 14 36 20
