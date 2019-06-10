@@ -117,6 +117,7 @@ class FileTree{
         vector<Version*> versionList(string path, tm * start,tm * end){
             File * file = find(path);
             vector<Version*> versionList;
+            if(file==NULL) return versionList;
             return file->getRangeVersion(start,end);
         }
 };

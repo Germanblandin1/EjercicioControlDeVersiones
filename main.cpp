@@ -23,7 +23,7 @@ void addFiles(FileTree * fileTree,FILE *file){
     for(int i=0;i<N;i++){
         fscanf(file,"%s %d",str,&type);
         path=str;
-        tm * timeinfo = createTimestap(2019,6,6,14,34,count);
+        tm * timeinfo = createTimestap(2019,6,6,14,36,count);
         if(count==0 || type==0){
             if(fileTree->addFolder(path,timeinfo)) printf("Directorio agregado con Exito\n");
             else printf("El directorio ya existe\n");
