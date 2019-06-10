@@ -47,13 +47,13 @@ class FileTree{
             }
         }
 
-        void preordenDeleted(File * current,tm * timestap){
+        void preordenDelete(File * current,tm * timestap){
             if(current->isFile()){
                 current->deleteVersion(timestap);
             }else{
                 vector<File*> childs= current->getChilds();
                 for(int i=0;i<childs.size();i++){
-                    preordenDeleted(childs[i],timestap);
+                    preordenDelete(childs[i],timestap);
                 }
             }
         }
@@ -86,16 +86,16 @@ class FileTree{
             return false;
         }
 
-        bool deletedFile(string path, tm * timestap){
+        bool deleteFile(string path, tm * timestap){
             File * file = find(path);
             if(file==NULL) return false;
             return file->deleteVersion(timestap);
         }
 
-        bool deletedFolder(string path, tm * timestap){
+        bool deleteFolder(string path, tm * timestap){
             File * file = find(path);
             if(file==NULL) return false;
-            preordenDeleted(file,timestap);
+            preordenDelete(file,timestap);
             return true;
         }
 

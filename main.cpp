@@ -64,7 +64,7 @@ void versionListQuery(string path,tm * timeinfo,tm * timeinfo2,FileTree *fileTre
 }
 
 void deleteFileQuery(string path,tm * timeinfo,FileTree *fileTree){
-    if(fileTree->deletedFile(path,timeinfo)){ 
+    if(fileTree->deleteFile(path,timeinfo)){ 
         printf("La version con ");
         printDate(timeinfo);
         printf(" del archivo %s fue borrada exitosamente\n",path.c_str());
@@ -72,7 +72,7 @@ void deleteFileQuery(string path,tm * timeinfo,FileTree *fileTree){
 }
 
 void deleteFolderQuery(string path,tm * timeinfo,FileTree *fileTree){
-    if(fileTree->deletedFolder(path,timeinfo)){
+    if(fileTree->deleteFolder(path,timeinfo)){
         printf("Las versiones con ");
         printDate(timeinfo);
         printf(" de los archivos del directorio %s fueron borrados exitosamente\n",path.c_str());
